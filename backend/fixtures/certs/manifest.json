@@ -1,0 +1,58 @@
+{
+  "root_ca.pem": {
+    "role": "ca",
+    "depth": 0,
+    "sig": "RSA-SHA256"
+  },
+  "intermediate_ca.pem": {
+    "role": "ca",
+    "depth": 1,
+    "sig": "RSA-SHA256"
+  },
+  "leaf_ok.pem": {
+    "role": "leaf",
+    "sig": "RSA-SHA256",
+    "key": "RSA-2048"
+  },
+  "leaf_rsa1024.pem": {
+    "role": "leaf",
+    "sig": "RSA-SHA256",
+    "key": "RSA-1024"
+  },
+  "leaf_sha1.pem": {
+    "role": "leaf",
+    "sig": "RSA-SHA1",
+    "key": "RSA-2048"
+  },
+  "leaf_expired.pem": {
+    "role": "leaf",
+    "sig": "RSA-SHA256",
+    "expired": true
+  },
+  "leaf_expiring30.pem": {
+    "role": "leaf",
+    "sig": "RSA-SHA256",
+    "days_left": 18
+  },
+  "leaf_selfsigned.pem": {
+    "role": "leaf",
+    "sig": "RSA-SHA256",
+    "self_signed": true
+  },
+  "leaf_ecdsa_p256.pem": {
+    "role": "leaf",
+    "sig": "ECDSA-SHA256",
+    "key": "ECDSA-P256"
+  },
+  "leaf_name_mismatch.pem": {
+    "role": "leaf",
+    "sig": "RSA-SHA256",
+    "name_mismatch": true
+  },
+  "leaf_sm2.pem": {
+    "role": "leaf",
+    "sig": "SM2-SM3",
+    "key": "SM2",
+    "unsupported_by_crypto_lib": true
+  }
+}
